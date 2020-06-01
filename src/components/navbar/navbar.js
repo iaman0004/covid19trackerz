@@ -14,7 +14,7 @@ const Navbar = () =>{
                         <a href="/faq" target="_blank" className="pure-menu-link"><i className="far fa-question-circle"></i></a>
                     </li>
                     <li className="pure-menu-item">
-                        <a href="https://www.github.com/iaman0004" target="_top" className="pure-menu-link"><i className="fab fa-github"></i></a>
+                        <a href="https://www.github.com/iaman0004/covid19trackerz/" target="_top" className="pure-menu-link"><i className="fab fa-github"></i></a>
                     </li>
                     <li className="pure-menu-item">
                         <a href="mailto:iak.sharma0004@gmail.com" className="pure-menu-link"><i className="fas fa-envelope-open"></i></a>
