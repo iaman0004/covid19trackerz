@@ -1,0 +1,38 @@
+.nav-bar{
+    display: block;
+    margin: auto;
+    text-align: center;
+    animation: appearEase 1s forwards 0s Ease;
+}
+
+.pure-menu-link{
+    text-transform: uppercase;
+    color:#b9b2b2;
+    text-decoration: none;
+    font-family: 'Roboto Mono', sans-serif;
+    padding: 10px 20px;
+}
+
+@keyframes appearEase{
+    0%{
+        transform: translateX(0px) translateY(-30px);
+        opacity: 0;
+        }
+    25%{
+        transform: translateX(0px) translateY(-20px);
+        opacity: 0.3;
+        }
+    50%{
+        transform: translateY(-5px);
+        opacity: .7;
+        }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+        }
+}
+
+.pure-menu-link:hover{
+    text-decoration: none;
+    color: #000000;
+}

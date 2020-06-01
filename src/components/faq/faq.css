@@ -1,0 +1,26 @@
+.faq-box{
+    padding: 0 30px;
+}
+
+.faq{
+    padding: 0;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.faq h1{
+    margin: .4rem;
+}
+
+.quest{
+    padding: 10px 0;
+    font-size: 1.5rem;
+}
+
+.que{
+    color: rgb(15, 155, 76);
+}
+
+.ans{
+    color: #c0c0c0;
+}

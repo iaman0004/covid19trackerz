@@ -1,0 +1,41 @@
+table{
+    padding: 0;
+    margin: 0;
+    border: 1px;
+    color: #fff5ee;
+}
+th{
+    color: rgb(56, 187, 176);
+}
+
+td{
+    color: #fff5ee;
+}
+
+td.table-lead{
+    color: rgb(117, 43, 214);
+}
+
+td.table-lead a{
+    color: #098d5a;
+    text-decoration: none;
+}
+
+td.table-lead a:hover{
+    color: #963258;
+}
+
+.table-row{
+    padding: 10px;
+}
+
+
+@media screen and (max-width : 600px){
+    .table-sm th{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .table{
+        font-size:.8rem;
+    }
+}

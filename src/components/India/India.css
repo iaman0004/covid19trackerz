@@ -1,0 +1,68 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-family: sans-serif;
+    /* background-color: #f7f7f7; */
+    background-color: rgb(10, 13, 19);
+    color: #ffebcd;
+}
+
+div.cases{
+    padding:5px 15px;
+    border: 2px solid #ff000f;
+    -webkit-box-shadow : 1px 1px 3px #ff000f;
+    -moz-box-shadow : 1px 1px 3px #ff000f;
+    -o-box-shadow : 1px 1px 3px #ff000f;
+    box-shadow : 1px 1px 1px #ff000f;
+}
+
+
+
+div.record-table{
+    padding: 0 5px 10px 5px;
+    margin: 10px 50px;
+}
+div.statewise{
+    padding: 5px 50px;
+}
+
+div.statewise h5{
+    padding-left: 10px;
+    font-size: .7rem;
+    padding: 0;
+    margin: 0;
+    font-style: oblique;
+    color: #708090;
+}
+
+.heading{
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    /* color: #0d8abb; */
+    color: red;
+    padding: 3px 10px;
+    border: 2px solid #ff000f;
+    -webkit-box-shadow : 1px 1px 3px #ff000f;
+    -moz-box-shadow : 1px 1px 3px #ff000f;
+    -o-box-shadow : 1px 1px 3px #ff000f;
+    box-shadow : 1px 1px 3px #ff000f;
+}
+
+div.state-data{
+    padding: 0;
+    padding-right: 15px;
+    margin: 0;
+}
+
+
+/* @media */
+@media screen and (max-width : 600px){
+    div.record-table{
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

@@ -1,0 +1,39 @@
+.record-boundary{
+    padding: 5px;
+    margin: 0;
+}
+
+.state-plate{
+    padding: 0 15px;
+}
+
+.state-name{
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    /* color: #0d8abb; */
+    color: red;
+    padding: 3px 10px;
+    border: 2px solid #ff000f;
+    -webkit-box-shadow : 1px 1px 3px #ff000f;
+    -moz-box-shadow : 1px 1px 3px #ff000f;
+    -o-box-shadow : 1px 1px 3px #ff000f;
+    box-shadow : 1px 1px 3px #ff000f;
+}
+
+.case-graph{
+    padding: 10px 5px 25px 5px;
+}
+
+
+/* @media */
+@media screen and (max-width : 600px){
+    .state-plate{
+        padding: 0;
+    }
+
+    .state-name{
+        padding:3px 0;
+    }
+}
