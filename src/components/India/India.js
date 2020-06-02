@@ -23,6 +23,10 @@ const India = () =>{
         }
         fetchCases();
     },[currentRecord]);
+    
+    useEffect(()=>{
+        document.title = "Covid19 | Outbreak in India";
+    });
 
     return(
         <div className="container-fluid">
