@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&display=swap');
+
 .record-boundary{
     padding: 5px;
     margin: 0;
@@ -7,19 +9,29 @@
     padding: 0 15px;
 }
 
+.record-table{
+    padding-top: 50px;
+}
+
 .state-name{
     display: block;
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
-    /* color: #0d8abb; */
-    color: red;
+    color: #ebd798;
     padding: 3px 10px;
-    border: 2px solid #ff000f;
-    -webkit-box-shadow : 1px 1px 3px #ff000f;
-    -moz-box-shadow : 1px 1px 3px #ff000f;
-    -o-box-shadow : 1px 1px 3px #ff000f;
-    box-shadow : 1px 1px 3px #ff000f;
+    font-family: 'Averia Serif Libre', cursive;
+}
+
+div.row.districts{
+    padding-bottom: 50px;
+}
+
+.state-district-data{
+    padding: 0;
+    margin: 0;
+    max-height: 50vh;
+    overflow-y: scroll;
 }
 
 .case-graph{
@@ -35,5 +47,10 @@
 
     .state-name{
         padding:3px 0;
+    }
+
+    .districts{
+        padding: 0;
+        margin: 0;
     }
 }

@@ -1,27 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&display=swap');
+
 body{
     padding: 0;
     margin: 0;
     font-size: 1rem;
     font-family: sans-serif;
-    /* background-color: #f7f7f7; */
-    background-color: rgb(10, 13, 19);
+    background-color: #e4e6e8c9;
     color: #ffebcd;
 }
 
-div.cases{
-    padding:5px 15px;
-    border: 2px solid #ff000f;
-    -webkit-box-shadow : 1px 1px 3px #ff000f;
-    -moz-box-shadow : 1px 1px 3px #ff000f;
-    -o-box-shadow : 1px 1px 3px #ff000f;
-    box-shadow : 1px 1px 1px #ff000f;
+.col-12{
+    padding: 0;
+    margin: 0;
 }
 
+div.state-data{
+    padding: 0;
+    margin: 0;
+}
 
+div.state-district-data{
+    padding-left: 10px;
+    margin: 0;
+}
+
+div.row.global-state{
+    padding-bottom: 40px;
+  }
+
+div.tool-tip{
+    padding-left: 20px;
+    text-transform: lowercase;
+    font-size: .8rem;
+}
+
+div.states{
+    padding: 40px 10px;
+}
 
 div.record-table{
-    padding: 0 5px 10px 5px;
-    margin: 10px 50px;
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+    max-height: 50vh;
 }
 div.statewise{
     padding: 5px 50px;
@@ -64,5 +85,6 @@ div.state-data{
         margin: 0;
         padding-left: 0;
         padding-right: 0;
+        max-height: 70vh;
     }
 }

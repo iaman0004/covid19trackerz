@@ -17,7 +17,7 @@ td.table-lead{
 }
 
 td.table-lead a{
-    color: #098d5a;
+    color: #00f697;
     text-decoration: none;
 }
 
@@ -29,6 +29,35 @@ td.table-lead a:hover{
     padding: 10px;
 }
 
+table thead th{
+    background-color: #3f3f3f;
+    position: sticky;
+    top: -1px;
+    border-bottom: 1px solid #fff;
+}
+
+table tbody tr:nth-child(odd){
+    background-color: rgb(79, 92, 95);
+}
+
+th{
+    text-transform: uppercase;
+}
+
+.confirmed-new, .confirmed-rcvd, .confirmed-death{
+    padding: 10px;
+    font-size: .7rem;
+}
+
+.confirmed-new{
+    color: #fa3636;
+}
+.confirmed-rcvd{
+    color: #07f87f;
+}
+.confirmed-death{
+    color: #ffff00;
+}
 
 @media screen and (max-width : 600px){
     .table-sm th{
@@ -37,5 +66,9 @@ td.table-lead a:hover{
     }
     .table{
         font-size:.8rem;
+    }
+    th{
+        font-size: .65rem;
+        text-transform: none;
     }
 }

@@ -1,8 +1,22 @@
 .nav-bar{
     display: block;
-    margin: auto;
+    margin: 0;
+    padding: 0;
     text-align: center;
+    /* background-color: rgb(68, 9, 28); */
+    background-color: #1b1b2f;
     animation: appearEase 1s forwards 0s Ease;
+}
+.right{
+    float: right;
+    text-align: end;
+}
+
+.header{
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: 500;
+    font-size: 2rem;
 }
 
 .pure-menu-link{
@@ -11,6 +25,10 @@
     text-decoration: none;
     font-family: 'Roboto Mono', sans-serif;
     padding: 10px 20px;
+}
+
+.pure-menu-item.dropdown{
+    display: none;
 }
 
 @keyframes appearEase{
@@ -35,4 +53,10 @@
 .pure-menu-link:hover{
     text-decoration: none;
     color: #000000;
+}
+
+@media screen and (max-width : 620px){
+    .pure-menu-list{
+        display: none;
+    }
 }

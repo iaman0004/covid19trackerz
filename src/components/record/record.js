@@ -3,19 +3,22 @@ import './record.css';
 import Axios from 'axios';
 import TableUnclicked from '../table/tableUnclicked';
 import Graphify from '../graphify/graphify';
+import Loading from '../loading/loading';
 
 
 
 const Record = ({current, cases}) =>{
     const [record, setRecord] = useState({});
+    const [loading, setLoading] = useState(true);
 
     const dataState = {
         labels : ['Confirmed', 'Active', 'Recoverd', 'Death'],
         datasets : [
             {
                 label : '',
-                backgroundColor : ['#0e9aa7', '#d92027', '#79d70f', '#303960'],
+                backgroundColor : ['#0e9aa7', '#d92027', '#17b978', '#fcefee'],
                 borderColor : 'rgba(0,0,0,1)',
+                labelColor : '#fff',
                 borderWidth : 0,
                 data : [cases[0].confirmed, cases[0].active, cases[0].recovered, cases[0].deaths]
             }
@@ -23,12 +26,12 @@ const Record = ({current, cases}) =>{
     }
 
     useEffect(()=>{
-        const fetchStateData = async () =>{
-            const response = await Axios('https://api.covid19india.org/state_district_wise.json');
-            setRecord(response.data[`${current}`].districtData);
-        }
-        fetchStateData();
-    },[record]);
+        Axios.get('https://api.covid19india.org/state_district_wise.json')
+        .then(res=>{
+            setRecord(res.data[`${current}`].districtData);
+            setLoading(false);
+        });
+    },[current]);
 
     return(
         <div className="record-boundary">
@@ -38,16 +41,20 @@ const Record = ({current, cases}) =>{
                         <h3 className="state-name">{current}</h3>
                     </div>
                     <div className="row">
-                        <div className="col-12">
+                        <div className="col"></div>
+                        <div className="col-md-5 col-sm-12">
                             <div className="case-graph">
                                 <Graphify data={dataState}/>
                             </div>
                         </div>
+                        <div className="col"></div>
                     </div>
-                    <div className="row">
-                        <div className="col-12">
-                            <TableUnclicked tableData={record}/>
+                    <div className="row districts">
+                        <div className="col"></div>
+                        <div className="col-md-8 col-sm-12 state-district-data">
+                            {!loading?<TableUnclicked tableData={record}/>:<Loading/>}
                         </div>
+                        <div className="col"></div>
                     </div>
                 </div>
             </div>
