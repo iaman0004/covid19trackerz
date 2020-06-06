@@ -7,7 +7,7 @@ const Navbar = () =>{
             <div className="row pure-menu pure-menu-horizontal">
                 <div className="col-md-4">
                     <div className="header">
-                        COVID<span className="num">19</span>
+                        COVID 19
                     </div>
                 </div>
                 <div className="col-md-8 right">
