@@ -20,7 +20,6 @@ const World = () =>{
             setWorld(res.data.data);
             setLoading1(false);
         });
-        console.log(world);
     },[world]);
 
     useEffect(()=>{
