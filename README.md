@@ -1,3 +1,4 @@
-A corona virus case tracker
+A corona virus case tracker for all across the Globe and in detailed within India
 
-![homw.png](home.png)
+![](Screenshot%20(41).png)
+![](Screenshot%20(40).png)
