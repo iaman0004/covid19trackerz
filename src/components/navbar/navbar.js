@@ -5,12 +5,26 @@ const Navbar = () =>{
     return(
         <div className="nav-bar">
             <div className="row pure-menu pure-menu-horizontal">
-                <div className="col-md-4">
-                    <div className="header">
-                        COVID 19
-                    </div>
+                <div className="col-md-4 col-sm-12">
+                <div className="wrapper">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td className="bar-1 logo-txt" colSpan="3"></td>
+                                <td rowSpan="3" className="txt logo-txt">covid<span className="nine">19</span>TRACKERZ</td>
+                            </tr>
+                            <tr>
+                                <td className="left-bar-3 logo-txt"></td>
+                                <td className="bar-1 logo-txt" colSpan="2"></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div className="col-md-8 right">
+                    {/* <div className="header">
+                        COVID<span className="num">19</span>
+                    </div> */}
+                </div>
+                <div className="col-md-8 col-sm-12 right">
                     <ul className="pure-menu-list" id="dropdown-click">
                         <li className="pure-menu-item">
                             <a href="/" className="pure-menu-heading pure-menu-link"><i className="fas fa-home"></i></a>

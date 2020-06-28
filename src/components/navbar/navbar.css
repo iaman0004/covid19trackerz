@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@900&display=swap');
+
 .nav-bar{
     display: block;
     margin: 0;
@@ -55,8 +57,52 @@
     color: #000000;
 }
 
+.wrapper {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+table {
+  border: none;
+  margin: auto;
+}
+table tbody td.logo-txt{
+  align-content: flex-end;
+  border: 2px solid  #1b1b2f;
+}
+table .bar-1 {
+  content: "";
+  height: 15px;
+  width: 50px;
+  background-color: #79bfe1;
+}
+table .left-bar-3 {
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: transparent;
+}
+table .txt {
+  font-family: 'MuseoModerno', cursive;
+  font-size: 1.35rem;
+  font-weight: 400;
+  padding: 0 5px;
+  text-shadow: 1px 1px #464444;
+}
+table .txt .nine {
+  color: red;
+}
+
 @media screen and (max-width : 620px){
-    .pure-menu-list{
-        display: none;
+    .wrapper{
+        text-align: center;
+    }
+    .wrapper table{
+        margin: auto;
+    }
+    div.right{
+        text-align: center;
     }
 }
