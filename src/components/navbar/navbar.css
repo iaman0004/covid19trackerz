@@ -64,7 +64,7 @@
   transform: translate(-50%, -50%);
 }
 
-table {
+.wrapper table {
   border: none;
   margin: auto;
 }
