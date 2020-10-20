@@ -20,7 +20,7 @@ const World = () =>{
             setWorld(res.data.data);
             setLoading1(false);
         });
-    },[world]);
+    },[]);
 
     useEffect(()=>{
         axios.get('https://api.thevirustracker.com/free-api?global=stats')
