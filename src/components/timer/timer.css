@@ -1,96 +1,109 @@
 /* @keyframes */
-@keyframes appearEaseTimer{
-    0%{
-        transform: rotate(xx) translateY(-20px);
-        opacity: 0;
-        }
-    40%{
-        transform: rotate(xx) translateY(-10px);
-        opacity: 0.5;
-        }
-    80%{
-        transform: rotate(xx) translateY(0px);
-        opacity: .9;
-        }
-    100%{
-        transform: rotate(xx) translateY(0px);
-        opacity: 1;
-        }
+@keyframes appearEaseTimer {
+	0% {
+		transform: rotate(xx) translateY(-20px);
+		opacity: 0;
+	}
+	40% {
+		transform: rotate(xx) translateY(-10px);
+		opacity: 0.5;
+	}
+	80% {
+		transform: rotate(xx) translateY(0px);
+		opacity: 0.9;
+	}
+	100% {
+		transform: rotate(xx) translateY(0px);
+		opacity: 1;
+	}
 }
 
-div.container-fluid.canvas{
-    background-color: #3f3f46;
+div.container-fluid.canvas {
+	background-color: #3f3f46;
+	display: flex;
+	flex-wrap: wrap;
+}
+.tile {
+	width: 33%;
 }
 
-div.row.global{
-    padding:5px;
-    animation: appearEaseTimer 2s forwards 0s ease-in;
+div.row.global {
+	padding: 5px;
+	animation: appearEaseTimer 2s forwards 0s ease-in;
 }
 
-.globe-wrapper{
-    text-align: center;
-    padding-top: 70px;
+.globe-wrapper {
+	text-align: center;
+	padding-top: 70px;
 }
 
-
-.box{
-    padding-top: 20px;
-    height: 100px;
-    font-size: 3.5rem;
-    font-family: 'Iceland', monospace;
-    /* border: 1px solid #ffffff; */
-    text-align: center;
+.box {
+	padding-top: 20px;
+	height: 100px;
+	font-size: 3.5rem;
+	font-family: 'Iceland', monospace;
+	/* border: 1px solid #ffffff; */
+	text-align: center;
 }
 
-.text-case{
-    position: relative;
-    display: block;
-    text-align: center;
-    padding-top: -60px;
-    font-family: 'Roboto', monospace;
-    font-size: 1.3rem;
-    color: #c1ece7;
-    line-height: 10px;
+.text-case {
+	position: relative;
+	display: block;
+	text-align: center;
+	padding-top: -60px;
+	font-family: 'Roboto', monospace;
+	font-size: 1.3rem;
+	color: #c1ece7;
+	line-height: 10px;
 }
 
-div.box.infected{
-    color: #6495ed;
+div.box.infected {
+	color: #6495ed;
 }
 
-div.box.active{
-    color: #f81414;
+div.box.active {
+	color: #f81414;
 }
 
-div.box.deaths{
-    color :  #aacdbe;
+div.box.deaths {
+	color: #aacdbe;
 }
 
-div.box.recovered{
-    color: #0cc95e;
+div.box.recovered {
+	color: #0cc95e;
 }
 
-div.box.new-infected{
-    color: #f1560d;
+div.box.new-infected {
+	color: #f1560d;
 }
 
-div.box.new-death{
-    color: #aacdbe;
+div.box.new-death {
+	color: #aacdbe;
 }
-
 
 /* @media */
-@media screen and (max-width : 600px){
-    .box{
-        font-size: 1rem;
-        padding: 0;
-        height: fit-content;
-    }
+@media screen and (max-width: 990px) {
+	.tile {
+		width: 50%;
+	}
+}
 
-    .text-case{
-        font-size: .7rem;
-    }
+@media screen and (max-width: 600px) {
+	.box {
+		font-size: 1rem;
+		padding: 0;
+		height: fit-content;
+	}
 
-    .box{
-        font-size: 1.7rem;
-    }
+	.text-case {
+		font-size: 0.7rem;
+	}
+
+	.box {
+		font-size: 1.7rem;
+	}
+
+	.tile {
+		width: 50%;
+	}
 }
