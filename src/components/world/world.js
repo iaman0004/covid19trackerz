@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 import Timer from '../timer/timer';
-import Navbar from '../navbar/navbar';
 import Loading from '../loading/loading';
 import WorldTable from '../table/worldTable';
 
@@ -28,7 +27,6 @@ const World = () => {
 
 	return (
 		<div className='container-fluid'>
-			<Navbar />
 			{!loading1 && !loading2 ? (
 				<div>
 					<div className='row'>

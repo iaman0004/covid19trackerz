@@ -44,6 +44,10 @@ th {
 	text-transform: uppercase;
 }
 
+.table-data {
+	text-align: center;
+}
+
 .confirmed-new,
 .confirmed-rcvd,
 .confirmed-death {

@@ -1,18 +1,24 @@
 import React from 'react';
-import {BrowserRouter, Route} from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-import World from './components/world/world';
-import India from './components/India/India';
-import FAQ from './components/faq/faq';
+import Navbar from './components/navbar/navbar';
+import Screen from './screen';
 
-const App = () =>{
-    return(
-        <BrowserRouter>
-            <Route path="/" exact component={World}/>
-            <Route path="/india" exact component={India}/>
-            <Route path="/faq" exact component={FAQ}/>
-        </BrowserRouter>
-    );
-}
+const App = () => (
+	<Router>
+		<div className='container-fluid'>
+			<div className='row'>
+				<div className='col-md-12 col-sm-12' style={{ padding: '0' }}>
+					<Navbar />
+				</div>
+			</div>
+			<div className='row'>
+				<div className='col-md-12 col-sm-12' style={{ padding: '0' }}>
+					<Screen />
+				</div>
+			</div>
+		</div>
+	</Router>
+);
 
 export default App;
